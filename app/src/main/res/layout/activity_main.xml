@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainMenu"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="250dp"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Player"
+        android:autofillHints="username"
+        />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:onClick="playGame" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Leaderboard"
+        android:onClick="leaderboard"/>
+
+    <ToggleButton
+        android:id="@+id/soundToggle"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:onClick="soundSwitch"
+        android:checked="true"
+        android:textOn="SOUND ON"
+        android:textOff="SOUND OFF"/>
+
+    <CheckBox
+        android:id="@+id/powerups"
+        android:layout_width="125dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="Power Ups"
+        android:checked="false" />
+
+    <RadioGroup
+        android:layout_width="125dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:checked="false"
+            android:onClick="radioButtonPress"/>
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:checked="true"
+            android:onClick="radioButtonPress"/>
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:checked="false"
+            android:onClick="radioButtonPress"/>
+
+        <RadioButton
+            android:id="@+id/uber"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Uber"
+            android:checked="false"
+            android:onClick="radioButtonPress"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="QUIT"
+        android:onClick="quitGame"/>
+
+
+</LinearLayout>
